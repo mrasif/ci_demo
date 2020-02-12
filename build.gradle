@@ -11,10 +11,16 @@ plugins {
     id 'java-library'
 }
 
+group 'com.cidemo.lib'
+version '1.0.0'
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    maven {
+        url  "https://dl.bintray.com/mrasif/ci-demo" 
+    }
 }
 
 dependencies {
