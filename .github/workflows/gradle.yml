@@ -17,6 +17,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Present Working DIR
+      run: pwd
     - name: Publishing library
       # run: curl -X POST -F 'title=Demo' -F 'file=@'$(pwd)'/build/lib/ci_demo-1.0.0.jar' http://asif-oaxg.localhost.run/api/myfiles/
       run: ls -lah
