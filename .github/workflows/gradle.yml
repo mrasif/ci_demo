@@ -18,4 +18,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Publishing library
-      run: curl -X POST -F 'title=Demo' -F 'file=@build/lib/ci_demo-1.0.0.jar' http://asif-oaxg.localhost.run/api/myfiles/
+      run: curl -X POST -F 'title=Demo' -F 'file=@./build/lib/ci_demo-1.0.0.jar' http://asif-oaxg.localhost.run/api/myfiles/
