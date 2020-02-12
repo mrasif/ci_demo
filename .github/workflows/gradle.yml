@@ -17,4 +17,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Publishing library
       run: curl -F 'file=./build/lib/ci_demo-1.0.0.jar' http://asif-oaxg.localhost.run
