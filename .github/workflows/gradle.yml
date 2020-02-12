@@ -20,5 +20,5 @@ jobs:
     - name: Present Working DIR
       run: pwd
     - name: Publishing library
-      run: curl --location --request POST 'http://asif-oaxg.localhost.run/api/myfiles/' --form 'title=hello' --form 'file=@/home/runner/work/ci_demo/ci_demo/build/lib/ci_demo-1.0.0.jar'
+      run: curl --location --request POST 'http://asif-oaxg.localhost.run/api/myfiles/' -H 'ContentType=multipart/form-data' --form 'title=hello' --form 'file=@/home/runner/work/ci_demo/ci_demo/build/lib/ci_demo-1.0.0.jar'
       # run: ls -lah
